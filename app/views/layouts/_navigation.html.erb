@@ -1,4 +1,4 @@
-<%# navigation styled for Bootstrap 4.0 %>
+<!-- <%# navigation styled for Bootstrap 4.0 %>
 <div class="container">
   <nav class="navbar navbar-dark bg-inverse">
     <ul class="nav navbar-nav clearfix">
@@ -15,4 +15,13 @@
       </ul>
     </div>
   </nav>
-</div>
+</div> -->
+<%# navigation styled for Bootstrap 4.0 %>
+<nav class="navbar navbar-light bg-light">
+    <div class="container">
+        <%= link_to "Joshua Kent Meadows", root_path, class: 'navbar-brand' %>
+        <ul class="nav navbar-nav">
+            <%= render 'layouts/navigation_links' %> <!-- All your other links should go in the navigation_links layout file. -->
+        </ul>
+    </div>
+</nav>
